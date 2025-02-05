@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Sidenav from "./Partials/Sidenav";
+import Topnav from "./partials/Topnav";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <Sidenav />
+      <div className="w-[80%] h-full overflow-auto overflow-x-hidden">
+        <Topnav />
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;
